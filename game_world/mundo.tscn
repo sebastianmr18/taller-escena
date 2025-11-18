@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://cnn06c8cxgtk1"]
+[gd_scene load_steps=8 format=3 uid="uid://cnn06c8cxgtk1"]
 
 [ext_resource type="PackedScene" uid="uid://8p4cyxnaa6nr" path="res://characters/player.tscn" id="1_5ugl8"]
+[ext_resource type="PackedScene" uid="uid://bfbxiieeigaj" path="res://game_components/house.tscn" id="2_l6y75"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_0jvvt"]
 
@@ -20,7 +21,7 @@ ambient_light_source = 3
 [node name="Mundo" type="Node3D"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 10, 0, 0, 0)
+transform = Transform3D(20, 0, 0, 0, 1, 0, 0, 0, 30, 0, -0.5, -12)
 mesh = SubResource("BoxMesh_0jvvt")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
@@ -33,9 +34,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.54551554, 1.9026139, 0.243
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(-0.07654491, -0.029126924, 0.99664056, -7.485469e-10, 0.9995731, 0.02921263, -0.99706614, 0.0022360776, -0.07651222, 10.258438, 3.4493995, 0.36282825)
+visible = false
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_a3bui")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.8904194, 0.45514092, 0, -0.45514092, 0.8904194, 0, 3.4833868, 3.4199219)
+
+[node name="House" parent="." instance=ExtResource("2_l6y75")]
