@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b5w6je8ur863y"
-path.s3tc="res://.godot/imported/cesped.jpg-5e74378ce7719de70a96504ac7b519c7.s3tc.ctex"
+uid="uid://bfjjs3ujkk3iq"
+path.s3tc="res://.godot/imported/rocky_terrain_02_diff_1k.jpg-4764443a21ce46b049f5b3e76f959e96.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/cesped.jpg"
-dest_files=["res://.godot/imported/cesped.jpg-5e74378ce7719de70a96504ac7b519c7.s3tc.ctex"]
+source_file="res://assets/rocky_terrain_02_diff_1k.jpg"
+dest_files=["res://.godot/imported/rocky_terrain_02_diff_1k.jpg-4764443a21ce46b049f5b3e76f959e96.s3tc.ctex"]
 
 [params]
 
